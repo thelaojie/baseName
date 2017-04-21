@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    margin: 0 auto;
+    list-style: none;
+    li{
+        width: 3px;
+        height: 100px;
+        float: left;
+        margin: 0 0 0 1px;
+        background-color: rgb(0,138,212);
+        transform-origin: left top;
+        animation: text 10s ease-in alternate infinite;
+        $time:0.1s;
+        $times:10s;
+        
+//      $colors: #f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000,#f00, #ff0, #ccc, #0f0, #0ff, #00f, #000;      
+        $nubs: 1;
+        
+//      @each $ele in $colors{
+//          &:nth-child( #{$nubs} ){
+//                background: $ele;
+//          }
+//          $nubs : $nubs + 1;
+//      }
+        $i:1;
+        @while $i < 301 {
+            &:nth-child(#{$i}){
+                @if $i % 2 == 0{
+                    animation-delay:$time;
+                    $time:$time + 0.2;
+                }
+                @else{
+                    animation-delay:$times;
+                    $times:$times + 0.2;
+                }
+                $colors1: random(255);
+                $colors2: random(255);
+                $colors3: random(255);
+                background-color: rgb($colors1,$colors2,$colors3);
+            }
+            $i: $i + 1;
+        }
+    }
+   
+}
+@keyframes text{
+    0%{
+        transform: scale(1,1);
+    }
+    100%{
+        transform: scale(1,2);
+    }
+}
+@keyframes texts{
+    0%{
+        transform: scale(1,1);
+    }
+    100%{
+        transform: scale(1,1.3);
+    }
+}

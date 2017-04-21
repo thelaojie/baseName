@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 400px;
+    height: 400px;
+    margin: 200px auto;
+    border-radius: 50%;
+    border:1px solid #000;
+    background-color: #eee;
+    position: relative;
+    i{
+        width: 6px;
+        height: 30px;
+        position: absolute;
+        top: 0;
+        left: 198px;
+        transform-origin: 2px 200px;
+        background-color: #000;
+        font-style: normal;
+        font-size: 20px;
+        @for $i from 1 to 13{
+            &:nth-child(#{$i}){
+                transform: rotate($i * 30deg);
+                @if $i % 3 == 0{
+                    background-color: transparent;
+                    span{
+                        display: block;
+                    }
+                    @if $i == 3{
+                        span{
+                            transform: rotate(-90deg);
+                        }
+                    }@else if $i == 6{
+                        span{
+                            transform: rotate(-180deg);
+                        }
+                    }@else if $i == 9{
+                        span{
+                            transform: rotate(-270deg);
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+    .dian{
+        width: 15px;
+        height: 15px;
+        background-color: #000;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        z-index: 1;
+    }
+    .s,.f,.m{
+        width: 8px;
+        height: 70px;
+        background-color: #000;
+        position: absolute;
+        transform-origin:bottom center;
+        left: 196px;
+        top:130px;
+        border-radius: 50% 50% 0 0;
+    }
+    .f{
+        width: 6px;
+        height: 100px;
+        left: 197px;
+        top:100px;
+    }
+    .m{
+        width: 4px;
+        height: 120px;
+        background-color: rgb(23,160,93);
+        left: 198px;
+        top:80px;
+    }
+    
+}
